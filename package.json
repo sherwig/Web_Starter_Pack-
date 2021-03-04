@@ -1,0 +1,28 @@
+{
+  "name": "web_starter_pack",
+  "version": "1.0.0",
+  "description": "webpack node-sass html5 boilerplate mashup ",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack -w"
+  },
+  "keywords": [
+    "webpack",
+    "node-sass",
+    "html5",
+    "boilerplate"
+  ],
+  "author": "Sam Herwig",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^5.1.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  }
+}
