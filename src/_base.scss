@@ -1,5 +1,83 @@
 $bg: yellow;
 
 body {
-  background: $bg;
+  background: $bgColor;
 }
+
+#container {
+  width: 100%;
+  display: inline-block;
+}
+
+nav {
+  overflow: hidden;
+  background-color: $navColor;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  ul {
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: $ulNavPadding;
+
+    li {
+      display: inline;
+      font-family: $navFont;
+      font-size: $navFontSize;
+
+      a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 14px;
+
+        &:hover {
+          background-color: $navLinkColor;
+        }
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: $h1Size;
+  margin: $h1Margin;
+  text-align: center;
+}
+
+h2 {
+  font-size: $h2Size;
+  margin: $h2Margin;
+}
+
+p {
+  font-size: $pSize;
+  margin: $pMargin;
+}
+// 
+// @include sticky-footer(100px);
+//
+// #wrapper {
+//   background: #F3F3F3;
+// }
+//
+// #footer {
+//   background: #F7A9B9;
+// }
+
+// #wrapper {
+//   min-height: 100%;
+//   height: auto !important;
+//   height: 100%;
+//   margin-bottom: $footer-height;
+//
+//   #fcontainer {
+//     padding: 0 0 $footer-height;
+//   }
+// }
+//
+// #footer {
+//   height: $footer-height;
+// }
