@@ -2,6 +2,7 @@ $bg: yellow;
 
 body {
   background: $bgColor;
+  font: $font-main;
 }
 
 #container {
@@ -41,6 +42,10 @@ nav {
   }
 }
 
+#{headings()} {
+  font: $font-highlight;
+}
+
 h1 {
   font-size: $h1Size;
   margin: $h1Margin;
@@ -56,7 +61,7 @@ p {
   font-size: $pSize;
   margin: $pMargin;
 }
-// 
+//
 // @include sticky-footer(100px);
 //
 // #wrapper {
