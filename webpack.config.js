@@ -8,13 +8,18 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.scss$/,
+        test: /\.scss$/,
 
-      use: [
-        "style-loader", // 3. injects css into DOM
-        "css-loader", // 2.turns css into commonjs
-        "sass-loader", // 1.turns sass into css
-      ],
-    }, ],
+        use: [
+          "style-loader", // 3. injects css into DOM
+          "css-loader", // 2.turns css into commonjs
+          "sass-loader", // 1.turns sass into css
+        ],
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: "url-loader",
+      }
+    ],
   },
 };
